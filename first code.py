@@ -5,7 +5,7 @@ import time
 driver=webdriver.Chrome()
 driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")
 time.sleep(5)
-
+#Sending Data
 driver.find_element(By.XPATH,'//input[@name="username"]').send_keys("Admin")
 driver.find_element(By.XPATH,'//input[@name="password"]').send_keys("admin123")
 driver.find_element(By.XPATH,'//button[@type="submit"]').click()
